@@ -16,7 +16,7 @@ export const ResultadoSld = styled.div`
 `;
 
 export const ConcursoSld = styled.div`
-    color: ${props => props.theme.secondary};
+    color: #29385e;
     font-size: 1.5rem;
     margin-left: 15px
 `;

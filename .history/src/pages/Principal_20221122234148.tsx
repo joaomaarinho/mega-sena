@@ -20,8 +20,8 @@ export default function Principal() {
       const numero = Math.floor(Math.random() * 2533);
       const temp: Props = await services.get(numero);
       setConcurso(temp);
-      setTheme(parseInt((concurso.listaDezenas)[0]) % 2 === 0 ? light : dark)
       console.log(temp);
+      setTheme(parseInt(concurso.listaDezenas[0]) % 2 === 0 ? dark : light)
     })();
   }, []);
 

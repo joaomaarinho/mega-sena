@@ -12,7 +12,7 @@ export const DezenaSld = styled.div`
   font-family: "FuturaWeb", sans-serif;
   font-size: 2rem;
   color: ${props => props.theme.background};
-  background: ${props => props.theme.green};
+  background: #209869;
   border-radius: 46px;
   width: 92px;
   height: 67px;

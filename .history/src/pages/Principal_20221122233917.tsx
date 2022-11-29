@@ -13,15 +13,21 @@ import { dark, light } from "../styles/theme.d";
 
 export default function Principal() {
   const [concurso, setConcurso] = useState({} as Props);
-  const [theme, setTheme] = useState(light);
+  const [theme, setTheme] = useState();
 
   useEffect(function () {
     (async function () {
       const numero = Math.floor(Math.random() * 2533);
       const temp: Props = await services.get(numero);
       setConcurso(temp);
-      setTheme(parseInt((concurso.listaDezenas)[0]) % 2 === 0 ? light : dark)
       console.log(temp);
+
+      if (parseInt(concurso.listaDezenas[0]) % 2 === 0) {
+        setTheme(light);
+      } else {
+        setTheme(dark);
+      }
+      //setTheme(parseInt(concurso.listaDezenas[0]) % 2 === 0 ? dark : light)
     })();
   }, []);
 

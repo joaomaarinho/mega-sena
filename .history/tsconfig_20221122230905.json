@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es5",    
+    "target": "es5",
+    "files": [
+      "src/styles/styled.d.ts"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,8 +25,5 @@
   },
   "include": [
     "src"
-  ],
-  "files": [
-    "src/styles/theme.d.ts"
-  ],
+  ]
 }

@@ -6,13 +6,13 @@ export const WrapperSld = styled.div`
 `;
 
 export const DezenaSld = styled.div`
-  position: relative;
+position: relative;
   display: inline-block;
   margin: 0 12px 0 0;
   font-family: "FuturaWeb", sans-serif;
   font-size: 2rem;
-  color: ${props => props.theme.background};
-  background: ${props => props.theme.green};
+  color: #fff;
+  background: #209869;
   border-radius: 46px;
   width: 92px;
   height: 67px;

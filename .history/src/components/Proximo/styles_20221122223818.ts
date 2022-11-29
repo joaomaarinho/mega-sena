@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const MessageSld = styled.div`
-  color: ${props => props.theme.secondary};
+  color: black;
   padding: 15px 10px;
-  font-size: 1.2rem;
+  font-size: 1rem;
   width: 30%;
-  max-width: 300px;
 `;
 
 export const ValorSld = styled.div`
-  color: ${props => props.theme.secondary};
+  color: black;
   padding: 15px 10px;
   font-size: 2rem;
   font-weight: bold;
